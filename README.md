@@ -29,18 +29,4 @@ python3 -m http.server 8000
 # 打开 http://localhost:8000
 ```
 
-## 部署到 GitHub Pages
 
-```bash
-git init && git add . && git commit -m "Snektris: snake x tetris mashup"
-git branch -M main
-git remote add origin https://github.com/<你的用户名>/snektris.git
-git push -u origin main
-```
-
-然后在仓库 **Settings → Pages → Source** 选择 `main` 分支根目录，几分钟后即可通过
-`https://<你的用户名>.github.io/snektris/` 在线游玩。
-
-## 技术
-
-单文件 HTML + Canvas + 原生 JS，零依赖，约 400 行。MIT License。
